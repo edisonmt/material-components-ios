@@ -131,11 +131,11 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_Typography",
-            path: "components/Typography/src",
             dependencies: [
                 "MaterialComponents_Availability",
                 "MaterialComponentsPrivate_Application"
             ],
+            path: "components/Typography/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -144,10 +144,10 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_TypographyScheme",
-            path: "components/schemes/Typography/src",
             dependencies: [
                 "MaterialComponents_Typography"
             ],
+            path: "components/schemes/Typography/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -165,10 +165,10 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_ShadowLayer",
-            path: "components/ShadowLayer/src",
             dependencies: [
                 "MaterialComponents_ShadowElevations"
             ],
+            path: "components/ShadowLayer/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -177,11 +177,11 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_Elevation",
-            path: "components/Elevation/src",
             dependencies: [
                 "MaterialComponents_Availability",
                 "MaterialComponentsPrivate_Math"
             ],
+            path: "components/Elevation/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -190,12 +190,12 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_Shapes",
-            path: "components/Shapes/src",
             dependencies: [
                 "MaterialComponents_ShadowElevations",
                 "MaterialComponents_ShadowLayer",
                 "MaterialComponentsPrivate_Math"
             ],
+            path: "components/Shapes/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -204,10 +204,10 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_ShapeScheme",
-            path: "components/schemes/Shape/src",
             dependencies: [
                 "MaterialComponents_Shapes"
             ],
+            path: "components/schemes/Shape/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -216,11 +216,11 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_ShapeLibrary",
-            path: "components/ShapeLibrary/src",
             dependencies: [
                 "MaterialComponents_Shapes",
                 "MaterialComponentsPrivate_Math"
             ],
+            path: "components/ShapeLibrary/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -242,11 +242,11 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_Ink",
-            path: "components/Ink/src",
             dependencies: [
                 "MaterialComponents_Availability",
                 "MaterialComponentsPrivate_Math"
             ],
+            path: "components/Ink/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -255,12 +255,12 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_Ripple",
-            path: "components/Ripple/src",
             dependencies: [
                 "MaterialComponents_AnimationTiming",
                 "MaterialComponents_Availability",
                 "MaterialComponentsPrivate_Math"
             ],
+            path: "components/Ripple/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -273,12 +273,12 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_ContainerScheme",
-            path: "components/schemes/Container/src",
             dependencies: [
                 "MaterialComponents_Color",
                 "MaterialComponents_TypographyScheme",
                 "MaterialComponents_ShapeScheme"
             ],
+            path: "components/schemes/Container/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -291,7 +291,6 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_Buttons",
-            path: "components/Buttons/src",
             dependencies: [
                 "MaterialComponents_Elevation",
                 "MaterialComponents_Ink",
@@ -302,6 +301,7 @@ let package = Package(
                 "MaterialComponents_Typography",
                 "MaterialComponentsPrivate_Math"
             ],
+            path: "components/Buttons/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -310,12 +310,12 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_ButtonsTheming",
-            path: "components/Buttons+Theming/src",
             dependencies: [
                 "MaterialComponents_Buttons",
                 "MaterialComponents_ContainerScheme",
                 "MaterialComponents_ShadowElevations"
             ],
+            path: "components/Buttons+Theming/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -328,7 +328,6 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_TextFields",
-            path: "components/TextFields/src",
             dependencies: [
                 "MaterialComponents_AnimationTiming",
                 "MaterialComponents_Elevation",
@@ -340,6 +339,7 @@ let package = Package(
                     package: "material-internationalization-ios"
                 )
             ],
+            path: "components/TextFields/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -348,7 +348,6 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_TextFieldsTheming",
-            path: "components/TextFields+Theming/src",
             dependencies: [
                 "MaterialComponents_TextFields",
                 "MaterialComponents_ContainerScheme",
@@ -358,6 +357,7 @@ let package = Package(
                     package: "material-text-accessibility-ios"
                 )
             ],
+            path: "components/TextFields+Theming/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -379,10 +379,10 @@ let package = Package(
 
         .target(
             name: "MaterialComponentsPrivate_OverlayWindow",
-            path: "components/private/OverlayWindow/src",
             dependencies: [
                 "MaterialComponentsPrivate_Overlay"
             ],
+            path: "components/private/OverlayWindow/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -391,10 +391,10 @@ let package = Package(
 
         .target(
             name: "MaterialComponentsPrivate_KeyboardWatcher",
-            path: "components/private/KeyboardWatcher/src",
             dependencies: [
                 "MaterialComponentsPrivate_Application"
             ],
+            path: "components/private/KeyboardWatcher/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
@@ -403,7 +403,6 @@ let package = Package(
 
         .target(
             name: "MaterialComponents_Snackbar",
-            path: "components/Snackbar/src",
             dependencies: [
                 "MaterialComponents_AnimationTiming",
                 "MaterialComponents_Availability",
@@ -418,6 +417,7 @@ let package = Package(
                 "MaterialComponentsPrivate_Overlay",
                 "MaterialComponentsPrivate_OverlayWindow"
             ],
+            path: "components/Snackbar/src",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
